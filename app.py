@@ -29,4 +29,4 @@ def health_check():
 
 @app.post("/predict", response_model=PredictionResponse)
 def predict(payload: PredictionRequest):
-    return {"input": payload.value, "prediction": payload.value * 2}
+    return {"input": payload.value, "prediction": payload.value * 10}
