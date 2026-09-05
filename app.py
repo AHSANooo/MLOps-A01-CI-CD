@@ -24,7 +24,8 @@ def health_check():
     return {
         "status": "healthy",
         "application": "student-ml-api",
-        "version": get_app_version()
+        "application_version": "1.1.0",
+        "model_version": "model-1"
     }
 
 @app.post("/predict", response_model=PredictionResponse)
